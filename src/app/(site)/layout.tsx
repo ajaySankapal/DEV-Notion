@@ -1,7 +1,13 @@
+import Header from "@/components/landing-page/header";
 import React from "react";
 
 const layout = ({ children }: { children: React.ReactNode }) => {
-  return <main>{children}</main>;
+  return (
+    <main>
+      <Header />
+      {children}
+    </main>
+  );
 };
 
 export default layout;
